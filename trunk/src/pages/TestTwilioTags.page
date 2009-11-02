@@ -1,0 +1,7 @@
+<apex:page contentType="text/xml" sidebar="false" showheader="false">
+  <c:Response >
+      <c:Gather >
+        <c:Say >Hello, How are you</c:Say>  
+      </c:Gather>
+  </c:Response>
+</apex:page>

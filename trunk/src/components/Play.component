@@ -1,0 +1,6 @@
+<apex:component >
+  <apex:attribute name="loop" type="integer" default="1" description="Twilio Play tag 'loop' attr"/>
+      <Play loop="{!loop}">
+          <apex:componentBody />
+      </Play>
+</apex:component>

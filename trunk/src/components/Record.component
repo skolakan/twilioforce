@@ -1,0 +1,12 @@
+<apex:component >
+  <apex:attribute name="action" type="string" default="/" description="Twilio Record tag 'action' attr"/>
+  <apex:attribute name="method" type="string" default="POST" description="Twilio Record tag 'method' attr"/>
+  <apex:attribute name="maxLength" type="integer" default="3600" description="Twilio Record tag 'maxLength' attr"/>
+  <apex:attribute name="timeout" type="integer" default="5" description="Twilio Record tag 'timeout' attr"/>
+  <apex:attribute name="finishOnKey" type="string" default="1234567890*#" description="Twilio Record tag 'finishOnKey' attr"/>
+  <apex:attribute name="transcribe" type="string" description="Twilio Record tag 'transcribe' attr"/>
+  <apex:attribute name="transcribeCallback" type="string" description="Twilio Record tag 'transcribeCallback' attr"/>  
+      <Record action="{!action}" method="{!method}" maxLength="{!maxLength}" timeout="{!timeout}" finishOnKey="{!finishOnKey}" actranscribetion="{!transcribe}" transcribeCallback="{!transcribeCallback}">
+          <apex:componentBody />
+      </Record>
+</apex:component>
