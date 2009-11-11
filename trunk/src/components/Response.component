@@ -1,5 +1,0 @@
-<apex:component >
-  <Response>
-      <apex:componentBody />
-  </Response >
-</apex:component>

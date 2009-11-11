@@ -1,6 +1,0 @@
-<apex:component >
-  <apex:attribute name="method" type="string" default="en" description="Twilio Redirect tag 'method' attr"/>
-  <Redirect method="{!method}">
-      <apex:componentBody />
-  </Redirect>
-</apex:component>
