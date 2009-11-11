@@ -1,0 +1,11 @@
+<apex:component >
+  <apex:attribute name="action" type="string" default="man" description="Twilio Dial tag 'action' attr"/>
+  <apex:attribute name="method" type="string" default="en" description="Twilio Dial tag 'method' attr"/>
+  <apex:attribute name="timeout" type="integer" default="5" description="Twilio Dial tag 'timeout' attr"/>
+  <apex:attribute name="hangupOnStar" type="string" default="false" description="Twilio Dial tag 'hangupOnStar' attr"/>
+  <apex:attribute name="timeLimit" type="integer" default="14400" description="Twilio Dial tag 'timeLimit' attr"/>
+  <apex:attribute name="callerId" type="string" description="Twilio Dial tag 'callerId' attr"/>
+  <Dial action="{!action}" method="{!method}" timeout="{!timeout}" hangupOnStar="{!hangupOnStar}" timeLimit="{!timeLimit}" callerId="{!callerId}">
+      <apex:componentBody />
+  </Dial>
+</apex:component>

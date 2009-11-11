@@ -1,0 +1,30 @@
+<apex:page standardController="Contact" extensions="ClickToCallController" showHeader="false">
+    <style type="text/css">
+    body {
+		font-family:'Arial','Helvetica',sans-serif;
+		font-size:75%;
+	}
+	a:link {
+COLOR: #000000;
+}
+a:visited {
+COLOR: #000000;
+}
+a:hover {
+COLOR: #000000;
+}
+a:active {
+COLOR: #000000;
+}
+    </style>
+    <div style="float:left;width:50px;"><apex:image url="{!$Resource.TwilioLogo}" width="32" height="32" /></div>
+    <div style="float:left">
+    	<apex:form >
+        	<apex:commandLink id="ClickToCallLink" action="{!ClickToCallAction}" value="{!Contact.Phone}" reRender="Results"/>
+    		<apex:outputPanel id="Results">
+    			<br /><apex:outputLabel id="ReturnCode" value="{!ReturnCode}"></apex:outputLabel>
+    		</apex:outputPanel>
+    	</apex:form>
+    </div>
+    
+</apex:page>

@@ -1,0 +1,10 @@
+<apex:component >
+  <apex:attribute name="action" type="string" default="man" description="Twilio Gather tag 'action' attr"/>
+  <apex:attribute name="method" type="string" default="en" description="Twilio Gather tag 'method' attr"/>
+  <apex:attribute name="timeout" type="integer" default="5" description="Twilio Gather tag 'timeout' attr"/>
+  <apex:attribute name="finishOnKey" type="integer" default="5" description="Twilio Gather tag 'finishOnKey' attr"/>
+  <apex:attribute name="numDigits" type="integer" description="Twilio Gather tag 'numDigits' attr"/>
+  <Gather action="{!action}" method="{!method}" timeout="{!timeout}" finishOnKey="{!finishOnKey}" numDigits="{!numDigits}">
+      <apex:componentBody />
+  </Gather>
+</apex:component>

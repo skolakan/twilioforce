@@ -1,0 +1,8 @@
+<apex:component >
+<apex:attribute name="voice" type="string" default="man" description="Twilio Say tag 'voice' attr"/>
+<apex:attribute name="language" type="string" default="en" description="Twilio Say tag 'lanugage' attr"/>
+<apex:attribute name="loop" type="integer" default="1" description="Twilio Say tag 'loop' attr"/>
+	<Say voice="{!voice}" language="{!language}" loop="{!loop}">
+		<apex:componentBody />
+	</Say>
+</apex:component>
