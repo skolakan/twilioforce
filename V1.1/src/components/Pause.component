@@ -1,0 +1,6 @@
+<apex:component >
+  <apex:attribute name="length" type="integer" default="1" description="Twilio Pause tag 'length' attr"/>
+  <Pause length="{!length}">
+      <apex:componentBody />
+  </Pause>
+</apex:component>

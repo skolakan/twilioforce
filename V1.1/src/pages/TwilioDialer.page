@@ -1,0 +1,5 @@
+<apex:page contentType="text/xml" controller="TwilioDialerController" showHeader="false">
+	<Response>
+		<Dial callerId="{!OutGoingCallerID}">{!$CurrentPage.parameters.Called}</Dial>
+	</Response>
+</apex:page>
